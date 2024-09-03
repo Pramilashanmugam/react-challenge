@@ -15,15 +15,19 @@ class StatefulGreeting extends React.Component {
             introduction: "Goodbye!",
             buttonText: "Enter",
 
+        }, ()=>{
+            console.log('new state', this.state.introduction);
+            console.log('new state', this.state.buttonText);
         });
         console.log(this.state.introduction);
+        console.log(this.state.buttonText);
 
     }
 
   render(){
     return (
         <div>
-            <h1>{this.state.introduction} {this.props.greeting} </h1>
+            <h1>{this.state.introduction}</h1>
             <button onClick={() => this.handClick()}>{this.state.buttonText}</button>
         </div>
     )

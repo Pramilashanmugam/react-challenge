@@ -1,6 +1,7 @@
 import css from './App.module.css';
 import Sidebar from "./components/Sidebar";
 import StatefulGreeting from "./components/StatefulGreeting";
+import StatefulGreetingWithPrevState from "./components/StatefulGreetingWithPrevState";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       {/* Add your components here */ }
       {/* <Sidebar /> */ }
-  <StatefulGreeting greeting="I'm learning Stateful class Component" name = "Mila" age ="18"/>
+  <StatefulGreetingWithPrevState />
     </div >
   );
 }
